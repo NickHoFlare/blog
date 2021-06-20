@@ -1,5 +1,6 @@
 import cn from 'classnames'
 import Link from 'next/link'
+import { applyBasePathToImage } from '../lib/api'
 
 type Props = {
   title: string
@@ -10,7 +11,7 @@ type Props = {
 const CoverImage = ({ title, src, slug }: Props) => {
   const image = (
     <img
-      src={src}
+      src={applyBasePathToImage(src)}
       alt={`Cover Image for ${title}`}
       className={cn('shadow-small', {
         'hover:shadow-medium transition-shadow duration-200': slug,

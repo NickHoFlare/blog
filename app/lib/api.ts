@@ -1,6 +1,7 @@
 import fs from 'fs'
 import { join } from 'path'
 import matter from 'gray-matter'
+import getConfig from 'next/config'
 
 const postsDirectory = join(process.cwd(), '_posts')
 
@@ -44,4 +45,14 @@ export function getAllPosts(fields: string[] = []) {
     // sort posts by date in descending order
     .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
   return posts
+}
+
+export function applyBasePathToImage(imageUrl: string): string {
+  const { publicRuntimeConfig } = getConfig();
+  
+  const url = imageUrl?.startsWith('/')
+    ? `${publicRuntimeConfig.basePath || ''}${imageUrl}`
+    : imageUrl;
+
+  return url;
 }
