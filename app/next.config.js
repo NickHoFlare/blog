@@ -1,4 +1,9 @@
-const basePath = '/blog'
+const basePath = process.env.NODE_ENV === 'production'
+    ? '/blog'
+    : '';
+
+console.log(`Environment is ${process.env.NODE_ENV}`);
+console.log(`basePath is ${basePath}`);
 
 module.exports = {
     basePath: basePath,
