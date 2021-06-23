@@ -1,5 +1,3 @@
-import { CMS_NAME } from '../lib/constants'
-
 const Intro = () => {
   return (
     <section className="flex-col md:flex-row flex items-center md:justify-between mt-8 mb-8 md:mb-12">
@@ -7,7 +5,7 @@ const Intro = () => {
         Blog.
       </h1>
       <h4 className="text-center md:text-left text-lg mt-5 md:pl-8">
-        A blog by {' '}
+        The random thoughts of {' '}
         <a
           href="https://github.com/terran324"
           className="underline hover:text-success duration-200 transition-colors"
