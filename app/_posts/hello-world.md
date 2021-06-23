@@ -5,7 +5,7 @@ coverImage: '/assets/blog/hello-world/cover.jpg'
 date: '2021-06-23T21:41:07.322Z'
 author:
   name: Nicholas Ho
-  picture: '/assets/blog/authors/tim.jpeg'
+  picture: '/assets/blog/authors/Girdog.png'
 ogImage:
   url: '/assets/blog/hello-world/cover.jpg'
 ---
