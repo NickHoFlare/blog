@@ -14,7 +14,9 @@ ogImage:
 
 You are now reading the first ever post of my dev (and perhaps occasionally other things) blog 🥳
 
-My name is Nicholas, and I'm currently a Software Engineer at the Commonwealth Bank of Australia. Learning to write software is tough, and writing it well is even tougher. My objective in starting this blog is to provide an account of my learning journeys and sentiments on tech. This will be an account to the learning i've done, and how far i've come. Perhaps someone will stumble across this at some point and even learn a thing or two from the mistakes i've made.
+My name is Nicholas, and I'm currently a Software Engineer at the Commonwealth Bank of Australia. Learning to write software is tough, and writing it well is even tougher. 
+
+My objective in starting this blog is to provide an account of my learning journeys and sentiments on tech, and for me to see how far i've come. Perhaps someone will stumble across this at some point and even learn a thing or two from the mistakes i've made.
 
 ## Straight to business...
 
