@@ -14,15 +14,13 @@ ogImage:
 
 You are now reading the first ever post of my dev (and perhaps occasionally other things) blog 🥳
 
-My name is Nicholas, and I'm currently a Software Engineer at the Commonwealth Bank of Australia. Learning to write software is tough, and writing it well is even tougher. 
-
-My objective in starting this blog is to provide an account of my learning journeys and sentiments on tech, and for me to see how far i've come. Perhaps someone will stumble across this at some point and even learn a thing or two from the mistakes i've made.
+My name is Nicholas, and I'm currently a Software Engineer at the Commonwealth Bank of Australia. Learning to write software is tough, and writing it well is even tougher. My objective in starting this blog is to provide an account of my learning journeys and sentiments on tech. This will be an account to the learning i've done, and how far i've come. Perhaps someone will stumble across this at some point and even learn a thing or two from the mistakes I've made.
 
 ## Straight to business...
 
 A blog needs content, and what better way to christen a devblog than to talk about how this blog was set up!
 
-At work, i've primarily been working with apps built with Angular and ReactJS, with an ASP.NET back-end, of both the Framework and Core varieties. Personally, I feel much more at home working with back-end concepts, but I enjoy making the occasional foray into Front-end land. 
+At work, I've primarily been working with apps built with Angular and ReactJS, with an ASP.NET back-end, of both the Framework and Core varieties. Personally, I feel much more at home working with back-end concepts, but I enjoy making the occasional foray into front-end land. 
 
 I've recently discovered the front-end framework [NextJS](https://nextjs.org/), which is seemingly built on top of ReactJS, yet provides its own flavour to front-end development. A quick executive summary of my understanding of the biggest differences of the two are:
 * React components/views are linked together via the use of React Router, whereas Next provides easy routing capability out of the box.
@@ -35,7 +33,7 @@ This article does a pretty great job at explaining the differences between CSR a
 
 ## Getting started
 
-while poking around the documentation of Next.js, I discovered that while using create-next-app to scaffold a new application, you can define a template (there are very many) for the scaffolded app, which can be found on [Github](https://github.com/vercel/next.js/tree/canary/examples). 
+While poking around the documentation of Next.js, I discovered that while using create-next-app to scaffold a new application, you can define a template (there are very many) for the scaffolded app, which can be found on [Github](https://github.com/vercel/next.js/tree/canary/examples). 
 
 I saw that there was an example entry for a ["blog starter"](https://github.com/vercel/next.js/tree/canary/examples/blog-starter-typescript) and got curious.
 
@@ -53,7 +51,7 @@ After some digging, I found that the issue was that Github Pages had set up a ba
 
 ## Down the rabbit hole 
 
-I am tearing my hair off my head at this point! I Experienced many problems with setting up a basePath. 
+I am tearing my hair off my head at this point! I experienced many problems with setting up a basePath. 
 
 First, I did some fiddling around with environment variables - I want the basepath to be applied only in Production mode, and not in development mode. Setting the `NODE_ENV` variable directly on my machine caused all sorts of hell to break loose, with archaic errors, the framework seemingly being unable to proceed past rendering beyond `_app.tsx`. Evidently, something in Next was relying on the value of `NODE_ENV`. Something was telling me that I was touching stuff that really shouldn't be tampered with!
 
@@ -133,5 +131,5 @@ Some gotchas I encountered while figuring out how were
 I now have a workflow set up where every commit made (blog post added/updated, or edits to the site itself) triggers the Github Actions workflow to deploy the site with the newest changes/posts, completely automagically! 
 
 <p align="center">
-  <img src="../public/assets/blog/hello-world/great-success.png">
+  <img src="../../assets/blog/hello-world/great-success.png">
 </p>
